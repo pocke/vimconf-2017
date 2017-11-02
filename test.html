@@ -1,0 +1,32 @@
+<!--
+syntax sync minlines=3 maxlines=3
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test Page</title>
+  </head>
+  <body>
+    <script>
+      class Hello {
+        constructor(name) {
+          this.name = name;
+        }
+
+        hello() {
+          console.log("Hello, " + this.name);
+        }
+
+        bye() {
+          console.log("Good-bye, " + this.name);
+        }
+      }
+
+      const hello = new Hello("pocke");
+
+      hello.hello() // => Hello, pocke
+      hello.bye() // => Hello, pocke
+    </script>
+  </body>
+</html>
